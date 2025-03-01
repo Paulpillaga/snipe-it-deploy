@@ -1,0 +1,8 @@
+2025-03-01 15:41:59,516 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-03-01 15:41:59,517 INFO supervisord started with pid 1
+2025-03-01 15:42:00,520 INFO spawned: 'exit_on_any_fatal' with pid 159
+2025-03-01 15:42:00,522 INFO spawned: 'apache' with pid 160
+2025-03-01 15:42:00,525 INFO spawned: 'run_schedule' with pid 161
+2025-03-01 15:42:01,985 INFO success: exit_on_any_fatal entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-01 15:42:01,985 INFO success: apache entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-01 15:42:01,985 INFO success: run_schedule entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

@@ -1,0 +1,27 @@
+{
+    "name": "tmilos/scim-filter-parser",
+    "description": "System for Cross-domain Identity Management SCIM AST filter parser PHP library",
+    "keywords": ["SCIM", "AST", "parser", "SCIM parser", "SCIM filter parser", "SCIM AST", "simplecloud"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milos Tomic",
+            "email": "tmilos@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tmilos\\ScimFilterParser\\": "src/",
+            "Tests\\Tmilos\\ScimFilterParser\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "tmilos/lexer": "^1.0",
+        "tmilos/value": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "satooshi/php-coveralls": "^1.0"
+    }
+}

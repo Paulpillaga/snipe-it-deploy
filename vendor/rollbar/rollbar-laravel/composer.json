@@ -1,0 +1,60 @@
+{
+    "name": "rollbar/rollbar-laravel",
+    "description": "Rollbar error monitoring integration for Laravel projects",
+    "keywords": [
+        "laravel",
+        "rollbar",
+        "monitoring",
+        "error",
+        "logging"
+    ],
+    "homepage": "https://github.com/rollbar/rollbar-php-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jens Segers",
+            "homepage": "https://jenssegers.com"
+        },
+        {
+            "name": "Artur Moczulski",
+            "email": "artur.moczulski@gmail.com",
+            "role": "Contractor @ Rollbar, Inc."
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
+        "rollbar/rollbar": "^4.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "mockery/mockery": "^1",
+        "php-coveralls/php-coveralls": "^2.2",
+        "squizlabs/php_codesniffer": "3.*",
+        "phpunit/phpunit": "^8|^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rollbar\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rollbar\\Laravel\\RollbarServiceProvider"
+            ],
+            "aliases": {
+                "Rollbar": "Rollbar\\Laravel\\Facades\\Rollbar"
+            }
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpunit --coverage-clover build/logs/clover.xml",
+            "phpcs --standard=PSR1,PSR2 src tests"
+        ],
+        "fix": "phpcbf --standard=PSR1,PSR2 src tests"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
